@@ -1,0 +1,152 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    background: #d0eaff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.imgSection{
+    /* width: 20rem; */
+    height: 80%;
+    flex-basis: 46%;
+    border: 2px solid;
+}
+.imgSection img{
+    /* transform: scaleY(0.9); */
+    height: 100%;
+   width: 100%;
+}
+
+.detailsSection{
+    /* width: 20rem; */
+    height: 400px;
+    flex-basis: 54;
+    padding: 20px;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+
+.detailsSection h1{
+    color: #333;
+    font-size: 35px;
+}
+
+.detailsSection h3{
+    color: #555;
+    font-size: 30px;
+}
+
+.detailsSection h5{
+    color: #00d874;
+    margin-bottom: 20px;
+}
+.detailsSection #gist{
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-style: italic;
+}
+
+form{
+    margin-top: 20px;
+}
+.sizeGuage,
+.colorGauge, 
+.quantityGuage{
+    line-height: 30px;
+}
+.sizeGuage p,
+.size-labels,
+.colorGauge p,
+.color-labels,
+.quantityGuage p,
+.quantityLabel{
+    display: inline-block;
+}
+.sizeGuage p,
+.colorGauge p,
+.quantityGuage p{
+    margin-right: 20px;
+    width: 25px;
+}
+
+.size-labels label input,
+.color-labels label input{
+    display: none;
+}
+
+.size-labels label input:checked + span{
+    font-size: 17px;
+    color: blue;
+    font-weight: 800;
+}
+
+.color-labels label span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+
+#red{
+    background: red;
+    margin-right: 5px;
+}
+#green{
+    background-color: green;
+    margin: 0px 5px;
+}
+#blue{
+    background-color: blue;
+    margin: 0px 5px;
+}
+#yellow{
+    background-color: yellow;
+    margin: 0px 5px;
+}
+
+.color-labels label input:checked + span{
+    transform: scale(1.5);
+}
+
+.quantityLabel input{
+    width: 50px;
+    background: #d3cfcf;
+    padding: 3px;
+}
+
+#btn-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+button{
+    width: 12rem;
+    height: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: rgba(77, 27, 170, 0.938);
+}

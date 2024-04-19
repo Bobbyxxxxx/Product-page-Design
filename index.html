@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4c7aaba552.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <main>
+    <div class="container">
+        <section class="imgSection">
+            <img src="/img/IMG-20230921-WA0052.jpg" alt="">
+            <div class="parts">
+                <span id="slide-1">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+                <span id="slide-2">
+                    <i class="fa-solid fa-arrow-right"></i> 
+                </span>
+            </div>
+        </section>
+
+        <section class="detailsSection">
+            <h1>Casual Guy</h1>
+            <h3>$15.00</h3>
+            <h5>30% OFF</h5>
+            <p id="gist">Buy your potential soulmate at very affordable price. <br> No refunds and no product complaints duhhh!!!!</p>
+
+            <form>
+                <div class="sizeGuage">
+                    <p>Size</p>
+                    <div class="size-labels">
+                        <label for="small">
+                            <input type="radio" name="small" id="small">
+                            <span id="S">S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="small" id="medium">
+                            <span id="M">M</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="small" id="large">
+                            <span id="L">L</span>
+                        </label>
+                        <label for="X-large">
+                            <input type="radio" name="small" id="X-large">
+                            <span id="XL">XL</span>
+                        </label>
+                        <label for="XX-large">
+                            <input type="radio" name="small" id="XX-large">
+                            <span id="XXL">XXL</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="colorGauge">
+                    <p>Color</p>
+                    <div class="color-labels">
+                        <label for="red">
+                            <input type="radio" name="red" id="red">
+                            <span id="red"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="red" id="green">
+                            <span id="green"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="red" id="blue">
+                            <span id="blue"></span>
+                        </label>
+                        <label for="yellow">
+                            <input type="radio" name="red" id="yellow">
+                            <span id="yellow"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="quantityGuage">
+                    <p>Quantity</p>
+                    <div class="quantityLabel">
+                        <input type="number" value="1">
+                    </div>
+                </div>
+                <div id="btn-container">
+                    <button type="submit">PURCHASE</button>
+                </div>
+            </form>
+        </section>
+    </div>
+   </main>
+</body>
+</html>
