@@ -26,6 +26,7 @@ main{
     height: 80%;
     flex-basis: 46%;
     border: 2px solid;
+    position: relative;
 }
 .imgSection img{
     /* transform: scaleY(0.9); */
@@ -149,4 +150,21 @@ button{
     border-radius: 15px;
     cursor: pointer;
     background: rgba(77, 27, 170, 0.938);
+}
+
+.parts{
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-arrow-left, .fa-arrow-right{
+    font-size: 13px;
+    cursor: pointer;
+}
+span{
+    cursor: pointer;
 }
