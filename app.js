@@ -13,12 +13,29 @@ let images = [
 }]
 
 const rightArrow = document.querySelector(".fa-arrow-right");
-const leftArrow = document.querySelector("fa-arrow-left");
+const leftArrow = document.querySelector(".fa-arrow-left");
 const imageContainer = document.getElementById("img-container");
 let img = 0;
+imageContainer.src = images[img].src;
 
 rightArrow.addEventListener("click", () => {
-    let imgC =images[img].src;
-    img++;
-    imageContainer.src = imgC;
+    if(img < 2){
+        img++;
+        imageContainer.src = images[img].src;
+        leftArrow.style.display = "block"
+        // rightArrow.style.display = "none";
+    } else {
+        // img++;
+        // imageContainer.src = images[img].src;
+        rightArrow.style.display = "none";
+    }  
+})
+leftArrow.addEventListener("click", () => {
+    if(img > 0){
+        img--;
+        rightArrow.style.display = "block"
+        imageContainer.src = images[img].src;
+    } else{
+        leftArrow.style.display = "none"
+    }  
 })

@@ -27,6 +27,7 @@ main{
     flex-basis: 46%;
     border: 2px solid;
     position: relative;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
 }
 .imgSection img{
     /* transform: scaleY(0.9); */
@@ -42,6 +43,7 @@ main{
     background: #fff;
     font-size: 13px;
     font-weight: 500;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
     /* display: flex;
     flex-direction: column;
     justify-content: space-around; */
@@ -100,6 +102,13 @@ form{
     font-weight: 800;
 }
 
+#M, #L, #XL, #XXL{
+    margin: 0px 2.5px;
+}
+#S{
+    margin-right: 2.5px;
+}
+
 .color-labels label span {
     display: inline-block;
     width: 10px;
@@ -111,19 +120,19 @@ form{
 
 #red{
     background: red;
-    margin-right: 5px;
+    margin-right: 7px;
 }
 #green{
     background-color: green;
-    margin: 0px 5px;
+    margin: 0px 7px;
 }
 #blue{
     background-color: blue;
-    margin: 0px 5px;
+    margin: 0px 7px;
 }
 #yellow{
     background-color: yellow;
-    margin: 0px 5px;
+    margin: 0px 7px;
 }
 
 .color-labels label input:checked + span{
@@ -164,7 +173,22 @@ button{
 .fa-arrow-left, .fa-arrow-right{
     font-size: 13px;
     cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 1000ms
+}
+.fa-arrow-left:hover, .fa-arrow-right:hover{
+    font-size: 25px;
+    color: white;
+    border: none;
 }
 span{
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    font-weight: 800;
 }
