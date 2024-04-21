@@ -192,3 +192,34 @@ a{
 a:hover{
     font-weight: 800;
 }
+
+@media screen and (max-width: 750px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .imgSection{
+        height: 40%;
+        width: 90%;
+        border: none;
+    }
+    .detailsSection{
+        height: 300px;
+        width: 90%;
+        border: 1px solid;
+    }
+    #btn-container{
+       position: relative;
+       top: 8rem; 
+       width: 100%;
+       background-color: white;
+    }
+    button{
+        background: transparent;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .parts{
+        top: 100px;
+    }
+  
+}
