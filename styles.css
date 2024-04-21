@@ -241,6 +241,7 @@ a:hover{
     margin-left: 15px;
 }
 #btn-container{
-    top: 20rem
+    position: relative;
+    bottom: 1.5rem;
 }
 }
