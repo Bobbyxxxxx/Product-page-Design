@@ -237,4 +237,10 @@ a:hover{
 .parts{
     top: 100px;
 } 
+.quantityLabel{
+    margin-left: 15px;
+}
+#btn-container{
+    top: 5.5rem;
+}
 }
