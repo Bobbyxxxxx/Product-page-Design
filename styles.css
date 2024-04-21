@@ -194,11 +194,11 @@ a:hover{
 }
 
 @media screen and (max-width: 750px){
-    .container{
+    /* .container{
         flex-direction: column-reverse;
     }
     .imgSection{
-        height: 40%;
+        height: 30%;
         width: 90%;
         border: none;
     }
@@ -220,6 +220,21 @@ a:hover{
     }
     .parts{
         top: 100px;
-    }
-  
+    } */
+  .container{
+    flex-direction: column-reverse;
+    height: 20rem;
+  }
+  .detailsSection{
+    margin-top: 10px;
+    border: 1px solid;
+  }
+ 
+  button{
+    background: transparent;
+    border-radius: 0px;
+}
+.parts{
+    top: 100px;
+} 
 }
